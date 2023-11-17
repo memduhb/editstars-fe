@@ -17,7 +17,8 @@
 }
 
 .main {
-  min-height: 100vh;
+  margin-top: -0.5rem;
+  min-height: 110vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -61,7 +62,6 @@
   max-width: 100px;
   margin: 0 auto;
   margin-top: 5rem;
-
 }
 
 .sectionContentLeft{
@@ -71,6 +71,7 @@
   border: 1px solid rgb(183, 20, 212);
   border-radius: 10px;
   background: #d8bcf2;
+  margin-bottom: 6rem;
 }
 
 .sectionContentRight {
@@ -80,6 +81,7 @@
   border: 1px solid rgb(183, 20, 212);
   border-radius: 10px;
   background: #d8bcf2;
+  margin-bottom: 6rem;
 }
 
 /*Image*/
@@ -140,14 +142,12 @@
   height: 28rem; /* Set a fixed height for all cards */
   margin-left: 0.7rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cardFive:hover,
-.cardFive:focus,
-.cardFive:active {
-  color: #0d76fc;
-  border-color: #0d76fc;
-}
+
 
 .cardRowFive {
   display: grid;
@@ -173,23 +173,50 @@
 }
 
 
-
 .card p {
   margin: 0;
   font-size: 1rem;
   line-height: 0.5;
 }
 
-.footer a {
+
+/*button*/
+
+.cardActions {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  font-size: 2rem;
-  background: #E5CFF7;
+  gap: 0.5rem; /* Adjust the gap between button and input as needed */
+  margin-top: 0.5rem;
+}
+
+.cardButton {
+  background-color: #8C55AA;
+  color: #ffffff;
+  border: none;
+  width: 8rem;
+  padding: 0rem 0rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.inputNumber {
+  width: 6rem;
+  padding: 0.5rem;
+  border: 1px solid #8C55AA;
+  border-radius: 5px;
+
 }
 
 
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  background: #E5CFF7;
+  justify-content: center;
+  align-items: center;
+
+}
 
 @media (max-width: 600px) {
   .grid {

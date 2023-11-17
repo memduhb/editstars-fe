@@ -29,34 +29,57 @@ const Sports: NextPage = () => {
 
           <div className={`${styles.cardRowFive}`}>
             {/* Use the new cardFive class for a 5-card row */}
-            <a className={styles.cardFive} href="sports">
+            <a className={styles.cardFive}>
               <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
               <h2>Arda Turan throwing shoe</h2>
-              
+              <div className={styles.cardActions}>
+                <button className={styles.cardButton}>Tip me</button>
+                <input className={styles.inputNumber} placeholder="＄ETH" />
+              </div>
             </a>
 
             <a className={styles.cardFive} href="sports">
-              <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
+              <img className={`${styles.contentImage}`} src="https://i.pinimg.com/originals/c2/5a/a7/c25aa7f3fe1b3dd244dfe43580f7fec8.jpg" alt="React Image" />
               <h2>Cristiano Ronaldo grinning</h2>
+              <div className={styles.cardActions}>
+                <button className={styles.cardButton}>Tip me</button>
+                <input className={styles.inputNumber} placeholder="＄ETH" />
+              </div>
             </a>
 
             <a className={styles.cardFive} href="sports">
               <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
               <h2>Messi looking at the scoreboard</h2>
+              <div className={styles.cardActions}>
+                <button className={styles.cardButton}>Tip me</button>
+                <input className={styles.inputNumber} placeholder="＄ETH" />
+              </div>
             </a>
 
-            <a className={styles.cardFive} href="sports">
+            <a className={styles.cardFive}>
               <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
               <h2>Emeghara taca atıyo topu</h2>
+              <div className={styles.cardActions}>
+                <button className={styles.cardButton}>Tip me</button>
+                <input className={styles.inputNumber} placeholder="＄ETH" />
+              </div>
             </a>
 
             <a className={styles.cardFive} href="sports">
               <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
               <h2>Icardi Recep İvedik transition</h2>
+              <div className={styles.cardActions}>
+                <button className={styles.cardButton}>Tip me</button>
+                <input className={styles.inputNumber} placeholder="＄ETH" />
+              </div>
             </a>
             <a className={styles.cardFive} href="sports">
               <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
               <h2>Hamınada mamınada</h2>
+              <div className={styles.cardActions}>
+                <button className={styles.cardButton}>Tip me</button>
+                <input className={styles.inputNumber} placeholder="＄ETH" />
+              </div>
             </a>
             {/* Add more cards as needed */}
           </div>
