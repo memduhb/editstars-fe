@@ -1,0 +1,199 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #E5CFF7;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.headerTitle {
+  font-size: 3rem;
+  margin: 0;
+  margin-top: 3.5rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background: #E5CFF7;
+}
+
+/*CONNECT BUTTON*/
+
+.connectButton {
+  position: absolute;
+  top: 1.5rem; /* Adjust this value to your preference */
+  right: 2rem; /* Adjust this value to your preference */
+}
+
+.sectionHeader {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  margin-left: 0.7rem; 
+}
+
+.grid {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+  max-width: 800px;
+ 
+}
+
+
+/*Section Content*/
+
+.sectionContentCenter {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100px;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+}
+
+.sectionContentLeft{
+  padding: 0 1rem;
+  margin-left: 3rem;
+  margin-right:3rem;
+  border: 1px solid rgb(183, 20, 212);
+  border-radius: 10px;
+  background: #d8bcf2;
+}
+
+.sectionContentRight {
+  padding: 0 1rem;
+  margin-right:3rem;
+  margin-left:3rem;
+  border: 1px solid rgb(183, 20, 212);
+  border-radius: 10px;
+  background: #d8bcf2;
+}
+
+/*Image*/
+
+.contentImage {
+  width: 100%;
+  height: 90%; /* Use 100% height to fill the container vertically */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 90%; /* Use 100% height to fill the container vertically */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.competitionImage {
+  width: 100%;
+  height: 80%; /* Use 100% height to fill the container vertically */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*Cards*/
+
+.card {
+  flex: 0 0 calc(33.333% - 1rem); /* Adjust the width and margin as needed */
+  margin: 0;
+  padding: 1.2rem;
+  text-align: left;
+  color: inherit;
+  background-color: rgba(197, 197, 197, 0.262);
+  text-decoration: none;
+  border: 1px solid rgb(143, 132, 157);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 25rem; /* Set a fixed width for all cards */
+  height: 20rem; /* Set a fixed height for all cards */
+  margin-left: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.cardFive {
+  flex: 0 0 calc(20% - 0.7rem); /* Adjust the width and margin as needed */
+  margin: 0;
+  padding: 0.5rem; /* Remove padding to ensure full use of available space */
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  background-color: rgba(187, 187, 187, 0.262);
+  border: 1px solid rgb(143, 132, 157);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 20rem; /* Set a fixed width for all cards */
+  height: 28rem; /* Set a fixed height for all cards */
+  margin-left: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.cardFive:hover,
+.cardFive:focus,
+.cardFive:active {
+  color: #0d76fc;
+  border-color: #0d76fc;
+}
+
+.cardRowFive {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem; /* Adjust the gap between cards as needed */
+}
+
+.cardFive h2 {
+  margin: 0.2rem 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: rgb(55, 87, 129);
+  border-color: rgb(55, 87, 129);
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 0.5;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 2rem;
+  background: #E5CFF7;
+}
+
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
