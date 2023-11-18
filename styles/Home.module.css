@@ -1,19 +1,21 @@
 .container {
-  display: flex;
+  display: relative;
   flex-direction: column;
   height: 100vh;
-  background: #E5CFF7;
+  background: white;
 }
 
 .header {
   text-align: center;
   padding: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .headerTitle {
   font-size: 3rem;
   margin: 0;
   margin-top: 0rem;
+  color: #111111de;
 }
 
 .main {
@@ -23,7 +25,7 @@
   flex: 1;
   display: flex;
   flex-direction: row;
-  background: #E5CFF7;
+  background: #fbfbfb;
 }
 
 /*CONNECT BUTTON*/
@@ -39,6 +41,7 @@
   margin-bottom: 1.5rem;
   align-items: center;
   margin-left: 0.7rem; 
+  color: #111111dc;
 }
 
 .grid {
@@ -68,9 +71,9 @@
   padding: 0 1rem;
   margin-left: 3rem;
   margin-right:3rem;
-  border: 1px solid rgb(143, 132, 157);
+  border: 1px solid rgb(166, 156, 178);
   border-radius: 10px;
-  background: #d8bcf2;
+  background: #d6d2da;
   margin-bottom: 6rem;
 }
 
@@ -78,19 +81,20 @@
   padding: 0 1rem;
   margin-right:3rem;
   margin-left:3rem;
-  border: 1px solid rgb(143, 132, 157);
+  border: 1px solid rgb(166, 156, 178);
   border-radius: 10px;
-  background: #d8bcf2;
+  background: #d6d2da;
   margin-bottom: 6rem;
 }
 
 /*Image*/
 
 .contentImage {
-  width: 100%;
-  height: 90%; /* Use 100% height to fill the container vertically */
+  width: 320px;
+  height: 360px; /* Use 100% height to fill the container vertically */
   object-fit: cover;
   border-radius: 10px;
+
 }
 
 .categoryImage {
@@ -98,6 +102,8 @@
   height: 90%; /* Use 100% height to fill the container vertically */
   object-fit: cover;
   border-radius: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 
@@ -112,16 +118,16 @@
 
 .card {
   flex: 0 0 calc(33.333% - 1rem); /* Adjust the width and margin as needed */
-  margin: 0;
-  padding: 1.2rem;
+  margin: 0.1rem;
+  padding: 0rem;
   text-align: left;
   color: inherit;
-  background-color: rgba(197, 197, 197, 0.262);
+  background-color: rgb(255, 255, 255);
   text-decoration: none;
-  border: 1px solid rgb(143, 132, 157);
+  border: 0px solid rgb(143, 132, 157);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 25rem; /* Set a fixed width for all cards */
+  width: 25rem; /* Set a fixed width for all cards */
   height: 20rem; /* Set a fixed height for all cards */
   margin-left: 0.7rem;
   margin-bottom: 1rem;
@@ -131,7 +137,7 @@
 .cardFive {
   flex: 0 0 calc(20% - 0.7rem); /* Adjust the width and margin as needed */
   margin: 0;
-  padding: 0.5rem; /* Remove padding to ensure full use of available space */
+  padding: 0rem; /* Remove padding to ensure full use of available space */
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -175,7 +181,7 @@
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 
@@ -218,9 +224,10 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  background: #E5CFF7;
+  background: #f7f7f7;
   justify-content: center;
   align-items: center;
+
 
 }
 
@@ -231,16 +238,64 @@
   }
 }
 
-.logoContainer {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  display: flex;
-  align-items: center;
+
+
+
+/* Add these styles to your existing CSS file */
+
+.createCompetitionForm {
+  width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.competitionLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: thin;
+  font-size: 1.5rem; /* Increase text size */
+}
+
+.competitionInput {
+  width: 100%;
+  padding: 10px; /* Increase input box size */
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createButton {
+  width: 100%;
+  padding: 15px; /* Increase button size */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px; /* Increase button border radius */
+  cursor: pointer;
+  font-size: 18px; /* Increase button text size */
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  margin-top: 20px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+
 .logo {
-  width: 50px; /* Adjust the width as needed */
-  height: auto;
-  margin-right: 1rem; /* Adjust the margin as needed */
+  position: absolute;
+  top: 0rem; /* Adjust the top value as needed */
+  left: 3rem; /* Adjust the left value as needed */
 }

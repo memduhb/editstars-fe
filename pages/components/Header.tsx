@@ -1,7 +1,9 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
+import star from '../starlogo.png';
 
 const Header:NextPage =  () => {
   return (
@@ -17,12 +19,8 @@ const Header:NextPage =  () => {
 
       {/* Header */}
       <header className={styles.header}>
-        <div className={styles.logoContainer}>
-          <img
-            className={styles.logo}
-            src="https://cdn.freebiesupply.com/logos/large/2x/silver-star-logo-png-transparent.png"
-            alt="Your Logo"
-          />
+      <div className={styles.logo}>
+          <Image src={star} alt="Star Logo" width={100} height={100} />
         </div>
         <h1 className={styles.headerTitle}>EDIT STARS</h1>
         <div className={styles.connectButton}>

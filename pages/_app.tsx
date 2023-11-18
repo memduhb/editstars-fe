@@ -3,6 +3,8 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import type { AppProps } from 'next/app';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+
+
 import {
   arbitrum,
   goerli,
@@ -54,8 +56,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
         <Component {...pageProps} />
+      
       </RainbowKitProvider>
     </WagmiConfig>
+    
   );
 }
 
