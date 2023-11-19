@@ -29,39 +29,32 @@ const ApecoinContent: NextPage = () => {
       {/* Use the new cardFive class for a 5-card row */}
       <a className={styles.cardFive}>
         <Image className={`${styles.contentImage}`} src={bayc1} alt="React Image" />
-        <h2>Arda Turan throwing shoe</h2>
-        
+        <h2>Apes on the boaat!</h2>
           <button className={styles.upvoteButton} >Upvote</button>
-        
       </a>
 
       <a className={styles.cardFive} href="sports">
         <Image className={`${styles.contentImage}`} src={bayc2} alt="React Image" />
-        <h2>Cristiano Ronaldo grinning</h2>
-        
+        <h2>Apecalypse</h2>
           <button className={styles.upvoteButton}>Upvote</button>
         
       </a>
 
       <a className={styles.cardFive} href="sports">
         <Image className={`${styles.contentImage}`} src={bayc3} alt="React Image" />
-        <h2>Cristiano Ronaldo grinning</h2>
-        
+        <h2>Apes on the news</h2>
           <button className={styles.upvoteButton}>Upvote</button>
-        
       </a>
 
       <a className={styles.cardFive} href="sports">
         <Image className={`${styles.contentImage}`} src={bayc4} alt="React Image" />
-        <h2>Cristiano Ronaldo grinning</h2>
-        
+        <h2>Apes fighting</h2>
           <button className={styles.upvoteButton}>Upvote</button>
-        
       </a>
 
       <a className={styles.cardFive} href="sports">
         <Image className={`${styles.contentImage}`} src={bayc5} alt="React Image" />
-        <h2>Cristiano Ronaldo grinning</h2>
+        <h2>Pixel Apes</h2>
         
           <button className={styles.upvoteButton}>Upvote</button>
         
@@ -69,7 +62,7 @@ const ApecoinContent: NextPage = () => {
 
       <a className={styles.cardFive} href="sports">
         <Image className={`${styles.contentImage}`} src={bayc6} alt="React Image" />
-        <h2>Cristiano Ronaldo grinning</h2>
+        <h2>Snoop Dogg ape fest edit</h2>
         
           <button className={styles.upvoteButton}>Upvote</button>
         
