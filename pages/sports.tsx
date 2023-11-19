@@ -9,7 +9,8 @@ const Sports: NextPage = () => {
     <div className={styles.container}>
       
       <Header />
-      
+      <h2>Current Matching Pool: 0.72 ETH</h2>
+      <h2>Round ends in 2 days 11 hours.</h2>
       <SectionContentCenter />
   
       <Footer />
