@@ -20,6 +20,7 @@ import {
   scroll,
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import CreateCompetition from './components/createCompetition';
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
@@ -56,7 +57,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
         <Component {...pageProps} />
-      
       </RainbowKitProvider>
     </WagmiConfig>
     

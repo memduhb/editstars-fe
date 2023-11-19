@@ -21,7 +21,16 @@
 .main {
   margin-top: -0.5rem;
   min-height: 110vh;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background: #fbfbfb;
+}
+
+.mainape {
+  min-height: 110vh;
+  padding: 0rem 0;
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -298,4 +307,52 @@
   position: absolute;
   top: 0rem; /* Adjust the top value as needed */
   left: 3rem; /* Adjust the left value as needed */
+}
+
+.joinButton {
+  position: relative;
+  padding: 10px;
+  border-radius: 6px; /* Increase button border radius */
+  cursor: pointer;
+  font-size: 18px; 
+  color: #fff;
+  background-color: #007bff;
+  width: 30%;
+  margin-left: 10rem;
+  border: none;
+  
+}
+
+
+.upvoteButton {
+  background-color: #8C55AA;
+  color: #ffffff;
+  width: 8rem;
+  padding: 0.6rem 1rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submitButton{
+  background-color: #8C55AA;
+  color: #ffffff;
+  width: 19.5rem;
+  padding: 1rem 2rem; 
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+
+.buttonContainer {
+  display: flex;
+  gap: 40px; /* Adjust the gap according to your preference */
+}
+
+.linkButton {
+  text-decoration: none;
 }

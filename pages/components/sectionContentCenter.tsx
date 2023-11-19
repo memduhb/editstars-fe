@@ -7,7 +7,7 @@ const SectionContentCenter: NextPage = () => {
     <main className={styles.main}>
     <div className={styles.sectionContentCenter}>
     {/* Content for the centered section goes here */}
-
+  
     <div className={`${styles.cardRowFive}`}>
       {/* Use the new cardFive class for a 5-card row */}
       <a className={styles.cardFive}>
@@ -39,7 +39,7 @@ const SectionContentCenter: NextPage = () => {
 
       <a className={styles.cardFive}>
         <img className={`${styles.contentImage}`} src="https://www.si.com/.image/t_share/MTY4MTkyNDA1NjQzMzM5NjQ5/arda-turan-throws-shoe-referee-video.png" alt="React Image" />
-        <h2>Emeghara taca atıyo topu</h2>
+        <h2></h2>
         <div className={styles.cardActions}>
           <button className={styles.cardButton}>Tip me</button>
           <input className={styles.inputNumber} placeholder="＄ETH" />

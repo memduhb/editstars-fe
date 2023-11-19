@@ -20,7 +20,9 @@ const Header:NextPage =  () => {
       {/* Header */}
       <header className={styles.header}>
       <div className={styles.logo}>
+        <a href="/">
           <Image src={star} alt="Star Logo" width={100} height={100} />
+          </a>
         </div>
         <h1 className={styles.headerTitle}>EDIT STARS</h1>
         <div className={styles.connectButton}>
