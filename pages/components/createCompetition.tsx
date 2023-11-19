@@ -7,14 +7,16 @@ import {
 
 import styles from '../../styles/Home.module.css';
 
+import {ethers} from "ethers"
+
 export default function CreateCompetition() {
   const [name, setName] = React.useState('')
   const [tokenAddress, setTokenAddress] = React.useState('')
-  const [amount, setAmount] = React.useState(0)
-  const [url, setUrl] = React.useState('')
+  const [amount, setAmount] = React.useState(ethers.constants.Zero)
+ 
 
   const { config } = usePrepareContractWrite({
-    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+    address: '0xb13cb2f9d2963bCF222097ff143E96F1FE3E5DFA',
     abi: [
       {
         "inputs": [
@@ -214,7 +216,7 @@ export default function CreateCompetition() {
       }
     ],
     functionName: 'createCompetition',
-    args: [name,tokenAddress,amount, url],
+    args: [name,amount,tokenAddress],
   })
   const { data, write } = useContractWrite(config)
 
@@ -228,6 +230,7 @@ export default function CreateCompetition() {
         className={styles.createCompetitionForm}
         onSubmit={(e) => {
           e.preventDefault();
+          console.log("sa")
           write?.();
         }}
       >
@@ -253,20 +256,12 @@ export default function CreateCompetition() {
           <label className={styles.competitionLabel} htmlFor="amount">Amount</label>
           <input className={styles.competitionInput}
             id="amount"
-            onChange={(e) => setAmount(parseFloat(e.target.value))}
+            onChange={(e) => setAmount(ethers.utils.parseEther(e.target.value))}
             placeholder=""
-            value={amount}
+            value={ethers.utils.formatEther(amount)}
           />
         </div>
-        <div className={styles.formGroup}>
-          <label className={styles.competitionLabel} htmlFor="name">Your video URL</label>
-          <input className={styles.competitionInput}
-            id="name"
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Your video URL"
-            value={name}
-          />
-        </div>
+      
         <button className={styles.createButton} disabled={!write || isLoading}>
           {isLoading ? 'Creating Competition...' : 'Create Competition'}
         </button>
